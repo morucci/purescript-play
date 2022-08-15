@@ -5,7 +5,7 @@ https://github.com/purescript/documentation/blob/master/guides/Getting-Started.m
 # Install tooling
 
 ```
-nix-shell -p purescript -p spago -p nodejs -p esbuild
+nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/00d73d5385b63e868bd11282fb775f6fe4921fb5.tar.gz -p purescript spago nodejs esbuild nodePackages.purescript-language-server
 ```
 
 # Init a project
